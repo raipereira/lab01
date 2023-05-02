@@ -1,0 +1,18 @@
+
+body{
+    background-color: rgb(186, 179, 169);
+}
+h1, h3{
+    color: cornflowerblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.font_italic{
+    font-style: italic;
+}
+.list_class{
+    font-weight: bold;
+}
+
