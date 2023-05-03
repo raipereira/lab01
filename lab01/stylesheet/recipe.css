@@ -21,13 +21,26 @@ body {
     left: 113px;
     padding: 10px;
   }
-
-img {
+  p{
     position: relative;
     left: 113px;
+    
+  }
+
+img.pai {
+    position: relative;
+    left: 104px;
     width: 17%;
     padding: 10px;
   }
+
+img.valid{
+    border:0;
+    width:88px;
+    height:31px;
+    left: 104px;
+}
+
   hr{
     width: 84%;
   }
