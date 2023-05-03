@@ -1,0 +1,97 @@
+
+body {
+    margin: 0 auto;
+    background-color: white;
+    text-decoration-color: #404040;
+    font-size: 11px;
+    font-family: Georgia, Garamond, serif;
+    width: 84%
+  }
+  a{
+    text-decoration: #A4A400;
+  }
+
+  u{
+    text-decoration: underline;
+
+  }
+
+  span{
+    position: relative;
+    left: 113px;
+    padding: 10px;
+  }
+
+img {
+    position: relative;
+    left: 113px;
+    width: 17%;
+    padding: 10px;
+  }
+  hr{
+    width: 84%;
+  }
+  
+
+.center {
+   border-style: ridge;
+   margin: auto;
+   width: 84%;
+   border: 2px;
+   font-size: 22px;
+   font-style: bold;
+   font-family: 'Lucida Sans Unicode',Helvetica, Arial, sans-serif;
+   padding: 0px;
+   text-align: center; 
+   color: rgb(164, 164, 0); 
+   background-color: rgb(240 240 240);
+   text-decoration: underline;
+}
+   .left {
+    border-style: ridge;
+    margin: auto;
+    width: 84%;
+    border: 2px;
+    font-size: 18px;
+    font-family: 'Lucida Sans Unicode',Helvetica, Arial, sans-serif;
+    padding: 0px;
+    text-align: left; 
+    color: rgb(164, 164, 0); 
+    background-color: rgb(240 240 240);
+    text-decoration: underline;
+ }
+  .parag1 {
+    position: relative;
+    margin: -2px 126px 0px;
+  }
+
+/* Define the custom counter style */
+@counter-style filled-circle {
+    system: cyclic;
+    symbols: "\25CF"; /* Unicode character for a filled circle */
+  }
+ /* ul{
+    position: relative;
+    margin: 12px 126px 10px;
+  }*/
+  ul.a {
+    counter-reset: my-counter;
+    margin: 12px 126px 10px;
+  }
+  ul.circl{
+    list-style-type: circle;
+    margin: 12px 5px 10px;
+  }
+  ul.number{
+    list-style-type: decimal;
+    margin: 12px 126px 10px;
+  }
+
+  p.comment1, .comment2, .comment3 {
+    position: relative;
+    left: 113px;
+    padding: 10px;
+    font-style: italic;
+    background-color: #FFFFA8;
+    width: 83%
+  }
