@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+    <link rel="stylesheet" type="text/css" href="/lab02/css/myforms.css">
+</head>
+
+<body>
+        <h2>nerdLuv<sup>tm</sup></h2>
+        <h6>where meek geeks meet</h6>
+
+       <!--<span>nerdLuv<sup>tm</sup></span>
+        <span>where meek geeks meet</span>-->
+    <form action="https://mumstudents.org/params.php" method="post">
+        <fieldset id="mfieldset">
+            <legend>New User SignUp:</legend>
+            <div class="dRow">
+                <div class="coloum1">
+                    <label for="Name" class="labels">Name:</label>
+                </div>
+                <div class="colum2">
+                    <input type="text" name="name" value="muna" class="inputclass" size="10">
+                </div>
+            </div>
+            <div class="dRow">
+                <div class="coloum1">
+                    <label for="gender">Gender:</label>
+                </div>
+                <div class="colum2">
+                    <input class="radios" type="radio" name="male">
+                    <label for="gender" class="r-Labels">Male</label>
+
+                    <input class="radios" type="radio" name="male">
+                    <label for="gender" class="r-Labels">Female</label>
+                </div>
+            </div>
+            <div class="dRow">
+            <div class="coloum1">
+                <label for="age" class="labels">Age:</label>
+            </div>
+            <div class="colum2">
+                <input type="text" name="age" class="inputclass" size="6" >
+            </div>
+            </div>
+            <div class="dRow">
+                <div class="coloum1">
+                    <label for="ptype" class="labels">Personality type:</label>
+                </div>
+                <div class="colum2">
+                    <input type="text" name="ptype" class="inputclass" size="6" >
+                </div>
+                <a href="http://www.humanmetrics.com/cgi-win/JTypes-2.asp">(Don't know your type yet?)</a>
+                </div>
+                <div class="dRow">
+                    <div class="coloum1">
+                        <label for="fos" class="labels">Favourite OS:</label>
+                    </div>
+                    <div class="colum2">
+                       <select id="os" name="os[]" multiple>
+                        <option value="windows">windows</option>
+                        <option value="mac">Mac</option>
+                        <option value="linux">linux</option>
+                        <option value="os x">OS X</option>
+                       </select>
+                    </div>
+                    </div>
+                    <div class="dRow">
+                        <div class="coloum1">
+                            <label for="sage" class="labels">Seeking age:</label>
+                        </div>
+                        <div class="colum2">
+                            <input type="text" name="sage" class="inputclass" size="3" placeholder="min">
+                            to
+                            <input type="text" name="sage" class="inputclass" size="3" placeholder="max">
+                        </div>
+                        </div>
+                        <button type="submit" >SignUp</button>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>
