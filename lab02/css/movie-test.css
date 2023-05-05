@@ -1,0 +1,22 @@
+#backg-part{
+    background-image: url("/images/background.png");
+}
+.flx{
+    display: flex;
+}
+#banner{
+    background-image: url("/images/bannerbg.png");
+}
+
+.j-center{
+    justify-content: center;
+}
+.fd-column{
+    flex-direction: column;
+}
+
+.div1{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
