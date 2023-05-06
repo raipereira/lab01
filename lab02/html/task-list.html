@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Task List application</title>
+    <link rel="stylesheet" type="text/css" href="/lab02/css/task-list.css">
+    
+</head>
+<body>
+
+    <div class="flex main-div">
+        <div class="t-list">
+            <h3>Task List</h3> 
+        </div>
+        <div class="s-cont">
+            <div class="flex j-content">
+                <span>Task</span>
+                <input type="text" id="txt-input" name="task" size="50"/>
+                <input type="button" onclick="addTask();" value="Add Task" size="50">
+                <input type="button" onclick="clearTask();" value="Clear Task" size="50">
+            </div>
+            <div class="flex w-50">
+                
+                <div>
+                    Task List
+                </div>
+                <textarea id="tx-area" rows="5"></textarea>
+            </div>
+
+        </div>
+    
+    </div>
+    
+    <script src="/lab02/js/task-list.js"></script>
+</body>
+</html>
