@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Text Decorator</title>
+		<link href="/css/decoratemytext.css" type="text/css" rel="stylesheet" />
+
+		<!-- <script src="/js/decoratemytext.js"></script> -->
+		
+	</head>
+
+	<!-- Your UI controls go here -->
+
+	<body style="display: flex; flex-direction: column; width: 100%; margin: 14%;">
+		<h1>Text Decorator</h1>
+		
+		<div style="display: flex; flex-direction: column; width: 20%; background-color: darkkhaki;">
+			<img src="/images/decorated.gif" alt="very decorated!" />
+		</div>
+
+		<div style="display: flex; flex-direction: column; width: 50%;">
+			<fieldset style="background-color: #eeeeee; width: 40%;" >
+				<legend> Text </legend>
+			<textarea id="text-area" style="width: 56%; font-size: 12pt;" rows="4" cols="5"></textarea>
+		</fieldset>
+		</div>
+
+		<div style="display: flex; flex-direction: column; width: 50%;">
+			<fieldset style="background-color: #eeeeee; width: 40%;">
+				<legend>Decoration</legend>
+			    <button id="click" style="width: 40%;" type="button">Bigger Decorations</button><br/>
+				<input id="checked" type="checkbox" onchange="onChange();" name="blig"> Bling
+			</fieldset>
+		</div>
+
+		<script src="/js/decoratemytext.js"></script>
+		
+	</body>
+</html>

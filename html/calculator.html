@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
-    <link rel="stylesheet" type="text/css" href="/lab02/css/calculate.css">
+    <link rel="stylesheet" type="text/css" href="/css/calculate.css">
 </head>
 <body>
     <div style="margin: auto;" >
@@ -37,9 +37,9 @@
 
 	<script>
 		function calcTip(){
-			let subtotal = document.getElementById("subtotal");
-			let tip = document.getElementById("tip");
-			let caltip = subtotal.value * (tip.value / 100);
+			let subtotal = document.getElementById("subtotal").value;
+			let tip = document.getElementById("tip").value;
+			let caltip = Number(subtotal) + Number(subtotal *(tip/100));
 			document.getElementById("total").innerHTML = caltip;
 		}
 

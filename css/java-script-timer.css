@@ -1,0 +1,61 @@
+
+.flex-body{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    /* align-content: center; */
+    width: 50%; 
+}
+
+.p-quest{
+    text-align: left;
+}
+
+.exerc-01{
+    background-color: rgb(184, 197, 197); 
+    border-radius: 1%;
+}
+.flex-btn{
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+ .flex-wid{
+     padding: 0px 0px 0px 0px; 
+} 
+
+.btn1{
+    background-color: green; 
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 0px 0px 0px;
+}
+
+.btn2{
+    background-color: blue; 
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 0px 0px 4px;
+}
+
+.btn3{
+    background-color: red; 
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 0px 0px 4px;
+}
+
+.btn4{
+    background-color: black; 
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    margin: 14px 0px 0px 4px;
+}
