@@ -4,37 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/BankAccount.css">
     <title>Bank Account Application</title>
    
 </head>
-<body>
+<body style="background-color: black;">
+    <div id="mainView" class="desplayed1" style="margin: auto; background-color: gray; width: 50%;">
     <fieldset>
         <legend style="background-color: grey; color: white; font-size: 16px;">Create a new bank account</legend>
     <label for="name">Account Name:</label>
     <input required type="text" id="name">
     <br><br>
     <label for="deposit">Initial deposit:</label>
-    <input required type="number" id="deposit">
+    <input style="margin-left: 8px;" required type="number" id="deposit">
     <br><br>
-    <button id="btn-account">Create new account</button>
+    <button style="margin-left: 100px;" id="btn-account">Create new account</button>
     <hr>
     <h2>Account list</h2>
-    <textarea id="account-list" rows="10" cols="50"></textarea>
-</fieldset><br/><br/>
-<div style="display: show;">
+    <textarea id="account-list" rows="10" cols="50"></textarea><br>
+    <button id="btn-display" style="background-color: green; text-align: center">Deposit</button>
+    <button id="btn-debit" style="background-color: red; padding-right: 20px; text-align: center;">Debit</button>
+</fieldset>
+</div>
+<br/><br/>
+<div id="depositView" class="desplayed2 hidden" style=" margin: auto; width: 50%; background-color: gray;">
     <fieldset>
-        <legend style="background-color: grey; color: white; font-size: 16px;">Deposit/Debit</legend>
+        <legend style="background-color: grey; color: white; font-size: 16px;">Deposit</legend>
         <label for="account-dropdown">Account:</label>
-        <select id="list-account"></select>
+        <select id="list-account" onchange="desabledBtn(this)"></select>
         <br><br>
         <label for="amount">Amount:</label>
         <input type="number" id="amount">
         <br><br>
-        <button id="btn-debit" style="background-color: green; padding-right: 20px; text-align: center;">Summit</button>
+        <button id="btn-sumit" disabled style=" background-color: green; padding-right: 20px; text-align: center;">Summit</button>
     </fieldset>
 </div>
-<button class="btn-display" style="background-color: green; text-align: center">Deposit</button>
-<button id="btn-debit" style="background-color: red; padding-right: 20px; text-align: center;">Debit</button>
+<br>
+<div id="depitView" class="desplayed2 hidden" style=" margin: auto; width: 50%; background-color: gray;">
+    <fieldset>
+        <legend style="background-color: grey; color: white; font-size: 16px;">Debit</legend>
+        <label for="account-dropdown">Account:</label>
+        <select id="list-account-depit" onchange="desabledBtn(this)"></select>
+        <br><br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount-depit">
+        <br><br>
+        <button id="btn-submit-depit" disabled style=" background-color: green; padding-right: 20px; text-align: center;">Submit</button>
+    </fieldset>
+</div>
+
 
 <script src="/js/BankAccountApplication.js"></script>
 </body>
