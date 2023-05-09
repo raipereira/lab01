@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Account Application</title>
+   
+</head>
+<body>
+    <fieldset>
+        <legend style="background-color: grey; color: white; font-size: 16px;">Create a new bank account</legend>
+    <label for="name">Account Name:</label>
+    <input required type="text" id="name">
+    <br><br>
+    <label for="deposit">Initial deposit:</label>
+    <input required type="number" id="deposit">
+    <br><br>
+    <button id="btn-account">Create new account</button>
+    <hr>
+    <h2>Account list</h2>
+    <textarea id="account-list" rows="10" cols="50"></textarea>
+</fieldset><br/><br/>
+<div style="display: show;">
+    <fieldset>
+        <legend style="background-color: grey; color: white; font-size: 16px;">Deposit/Debit</legend>
+        <label for="account-dropdown">Account:</label>
+        <select id="list-account"></select>
+        <br><br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount">
+        <br><br>
+        <button id="btn-debit" style="background-color: green; padding-right: 20px; text-align: center;">Summit</button>
+    </fieldset>
+</div>
+<button class="btn-display" style="background-color: green; text-align: center">Deposit</button>
+<button id="btn-debit" style="background-color: red; padding-right: 20px; text-align: center;">Debit</button>
+
+<script src="/js/BankAccountApplication.js"></script>
+</body>
