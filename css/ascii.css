@@ -1,0 +1,59 @@
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+div div{
+    background-color: #CCCCFF; 
+}
+
+.flex{
+    display: flex;
+}
+
+.j-const{
+    justify-content: center;
+}
+
+.a-center{
+    display: flex;
+    justify-content: center;
+}
+
+.men-div{
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    height: 400px;
+    background-color:  #CCCCFF;
+    margin: auto;
+    margin-bottom: 10px;
+    border-left: 40px solid  #CCCCFF;
+    border-right: 40px solid  #CCCCFF;
+    padding: 11px 4px 81px 4px;
+
+}
+
+.div-1{
+   justify-content: center;
+   flex-direction: column;
+   
+}
+
+.div-2{
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+fieldset{
+    border: 5px solid black;
+}
+
+ label{
+    font-size: 32pt;
+    text-align: center;
+} 
+
+
