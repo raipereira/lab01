@@ -24,27 +24,29 @@ div div{
 .men-div{
     flex-direction: column;
     justify-content: center;
-    width: 90%;
-    height: 400px;
     background-color:  #CCCCFF;
     margin: auto;
     margin-bottom: 10px;
     border-left: 40px solid  #CCCCFF;
     border-right: 40px solid  #CCCCFF;
-    padding: 11px 4px 81px 4px;
-
+    padding: 4px 4px 81px 4px;
 }
 
 .div-1{
    justify-content: center;
    flex-direction: column;
-   
 }
 
 .div-2{
     justify-content: center;
     flex-direction: column;
    
+}
+
+.div-validator{
+    flex-direction: column;
+    margin-left: auto;
+
 }
 
 fieldset{
