@@ -1,5 +1,5 @@
 function initialize(){
-  var list = $$(".boundary");
+  var list = $(".boundary");
   for (var i = 0;i < list.length;i ++){
       if (list[i].className == "boundary example")
         continue;
