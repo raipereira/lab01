@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator Lab</title>
+    <!-- <link rel="stylesheet" href="./calculator.css"> -->
+
+    <style>
+       
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            margin: auto;
+            width: 50%;
+            background-color: rgb(166, 175, 183);
+            border-radius: 10px;
+        }
+        .div-operation{
+            display: flex;
+            justify-items: center;
+            margin: auto;
+        }
+        .div-title{
+            display: flex;
+            justify-items: center;
+            margin: auto;
+        }
+
+        .div-inform{
+            margin: auto;
+            display: flex;
+            justify-items:center ;
+        }
+
+        button{
+            margin: auto;
+            display: flex;
+            justify-items:center ;
+            width: 48px;
+            color: white;
+            background-color: green;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <form method="post" action="http://localhost:8080/result"></form>
+    <div class="main">
+        <div class="div-operation">
+            <select onchange="selectOperation()" id="menu" name="operation">
+                <option value="+" selected>Sum</option>
+                <option value="-">Subtraction</option>
+                <option value="/">Division</option>
+                <option value="*">Multiplication</option>
+            </select>
+        </div>
+        <div class="div-title">
+            <h3>Inform two numbers</h3>
+        </div>
+        
+        <div class="div-inform block">
+            <input type="number" name="num1" /><br />
+            <span id="operation">+</span>
+            <input type="number" name="num2" /><br />
+        </div><br>
+        <button type="submit" value="Click">Click</button>
+       
+    </div>
+</form>
+</body>
+<script>
+    function selectOperation() {
+        document.getElementById("operation").textContent = document.getElementById("menu").value;
+    }
+</script>
+
+</html>
