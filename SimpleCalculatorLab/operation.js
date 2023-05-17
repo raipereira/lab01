@@ -1,6 +1,6 @@
-const getResult = (operation, num1, num2) => {
-  firstNum = +num1;
-  secondNum = +num2;
+const getResult = (operation, firstNum, secondNum) => {
+  firstNum = +firstNum;
+  secondNum = +secondNum;
 
   switch(operation){
     case "+":

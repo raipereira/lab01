@@ -48,36 +48,36 @@
 
     </style>
 </head>
-
 <body>
-    <form method="post" action="http://localhost:8080/result"></form>
+  <form method="post" action="http://localhost:8080/result">
     <div class="main">
         <div class="div-operation">
-            <select onchange="selectOperation()" id="menu" name="operation">
-                <option value="+" selected>Sum</option>
-                <option value="-">Subtraction</option>
-                <option value="/">Division</option>
-                <option value="*">Multiplication</option>
-            </select>
-        </div>
-        <div class="div-title">
-            <h3>Inform two numbers</h3>
-        </div>
-        
-        <div class="div-inform block">
-            <input type="number" name="num1" /><br />
-            <span id="operation">+</span>
-            <input type="number" name="num2" /><br />
-        </div><br>
-        <button type="submit" value="Click">Click</button>
-       
+    <select onchange="selectOperation()" id="menu" name="operation">
+      <option value="+" selected>Sum</option>
+      <option value="-">Subtraction</option>
+      <option value="/">Division</option>
+      <option value="*">Multiplication</option>
+    </select>
+</div>
+<div class="div-title"> 
+    <h3>Inform two numbers</h3>
     </div>
-</form>
-</body>
+    <div class="block div-inform">
+      <input type = "text" name="firstNum"/><br/>
+      <span id="operation">+</span>
+      <input type = "text" name="secondNum"/><br/>
+    </div>
+    <button type="submit" value="Click">Click</button>
+    
+</div>
+  </form>
+</body> 
+
+
 <script>
     function selectOperation() {
         document.getElementById("operation").textContent = document.getElementById("menu").value;
     }
 </script>
 
-</html>
+</html> 
