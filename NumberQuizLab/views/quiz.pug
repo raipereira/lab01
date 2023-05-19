@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title The Number Quiz
+    link(rel='stylesheet', href='/style.css')
+  bodys
+    
+    h1 The Number Quiz
+    p Your current score is #{score}.
+    if question
+      p Guess the next number in the sequence.
+      p #{question.sequence}
+      form(action='/check' method='POST')
+        p
+          label(for='answer') Your answer:
+          input(type='text' name='quizNum')
+        input(type='submit' value='Submit')
+    else
+      p You have completed the Number Quiz, with a score of #{score} out of #{questions.length}.
