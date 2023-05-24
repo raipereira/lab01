@@ -1,0 +1,52 @@
+/* dict.css */
+
+.container {
+   
+   background-color: rgb(114, 148, 148);
+    padding: 20px;
+  }
+
+  #div-result{
+    margin-right: auto;
+    border: solid;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+   button:hover {
+    background-color: #091dba;
+  }
+  
+  #results li {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  #results li:nth-of-type(even) {
+    background: rgb(231, 238, 231);
+  }
+  #results li:nth-of-type(odd) {
+    background: rgb(226, 230, 233);
+  }
+  
